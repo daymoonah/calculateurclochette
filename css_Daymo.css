@@ -1,0 +1,136 @@
+body {
+	width: 100%;
+	background-color: #20A2A2;
+	vertical-align: baseline;
+	margin:0;
+}
+
+/* images des items*/
+img {
+	/*height: 3cm;
+	width: 3cm;*/
+	text-align: center;
+}
+
+/*index.php*/
+#totalcomplet {
+	border : 1px solid black;
+	right: 10%;
+	bottom: 15%;
+	position : fixed;
+	background: white;
+	opacity: 70%;
+	padding : 5px;
+}
+
+/*bouton de navigation*/
+nav {
+	border-top: 3px solid #eeee99;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 5px;
+}
+
+nav span {
+	color : black;
+	text-decoration: none;
+}
+
+nav span:hover {
+	background: #aaddff;
+}
+
+#conteneur {
+	border: solid #151515 3px;
+	margin: 0px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.boite {
+	text-align: center;
+	color : #FFFFFF; /* Couleure du texte */
+	border: solid #FFFFFF 1px;
+	height: 8cm;
+	width: 5cm;
+	margin: 5px;
+}
+
+h3 {
+	margin: 10px;
+}
+
+/*en construction*/
+footer {
+	border : 1px solid black;
+	bottom: 0%;
+	left: 45%;
+	position : fixed;
+	padding : 5px;
+	background: red;
+	font-size: 20px;
+
+}
+
+/*bouton plus et moins*/
+
+form {
+	margin-top: 15px;
+}
+
+/*relative par rapport aux parents*/
+/*absolute par rapport à la page*/
+
+/*laccueil.php*/
+div#accueil p {
+	position: absolute;
+	top: 30%;
+	left: 45%;
+}
+
+/*lespoisson.php*/
+
+div#poisson {
+	display: none;
+}
+
+/*lesinsectes.php*/
+div#insecte {
+	display: none;
+}
+
+/*peutetreautre.php*/
+div#autre {
+	display: none;
+}
+
+/*_____________________________________________________________*/
+
+a.parent_bulle {
+	position: relative;
+}
+
+a.parent_bulle .bulle { 
+	position: absolute;
+	left: 0;
+	top: -40px;
+	font-family:arial, verdana, sans-serif;
+	text-align:left;
+	font-size:17px;
+	color:#0CBFA7;
+	font-weight:normal;
+	width:200px;
+	background: white;
+	padding: 5px;
+	border: #62c0f4 solid 1px ;
+	text-indent: 0;
+	display: none;
+}
+
+a.parent_bulle:hover .bulle {
+	display: block;
+}
